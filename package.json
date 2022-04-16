@@ -1,0 +1,48 @@
+{
+  "name": "vue-vconsole-devtools-project",
+  "version": "0.0.0",
+  "description": "vConsole vue-devtools plugin. Debug vue anywhere",
+  "main": "./dist/vue_plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:dev": "webpack --mode development",
+    "build:inject": "cd vue-devtools/packages/shell-host && yarn build",
+    "release": "npm version patch && cd packages && npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zippowxk/vue-vconsole-devtools.git"
+  },
+  "keywords": [
+    "vue-devtools",
+    "vConsole",
+    "vconsole",
+    "vue",
+    "debug",
+    "vue.js",
+    "plugin"
+  ],
+  "author": "xinkai.wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zippowxk/vue-vconsole-devtools/issues"
+  },
+  "homepage": "https://github.com/Zippowxk/vue-vconsole-devtools#readme",
+  "devDependencies": {
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.21.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-webpack-plugin": "^2.5.2",
+    "path": "^0.12.7",
+    "raw-loader": "^4.0.2",
+    "terser-webpack-plugin": "^5.1.1",
+    "webpack": "^5.35.1",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "private": true,
+  "workspaces": [
+    "vue-devtools/packages/*"
+  ]
+}
