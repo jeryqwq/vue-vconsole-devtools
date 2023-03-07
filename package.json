@@ -1,5 +1,5 @@
 {
-  "name": "vue-vconsole-devtools-project",
+  "name": "@jeryqwq/vue-vconsole-devtools",
   "version": "0.0.0",
   "description": "vConsole vue-devtools plugin. Debug vue anywhere",
   "main": "./dist/vue_plugin.js",
@@ -41,7 +41,6 @@
     "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.6.0"
   },
-  "private": true,
   "workspaces": [
     "vue-devtools/packages/*"
   ]
